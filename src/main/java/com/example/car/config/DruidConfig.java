@@ -17,6 +17,7 @@ public class DruidConfig {
     public DataSource dataSource(){
         DataSource dataSource = new DruidDataSource();
         return dataSource;
+
     }
 
 }
