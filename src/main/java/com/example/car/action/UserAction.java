@@ -45,7 +45,7 @@ public class UserAction {
     @ResponseBody
     @RequestMapping("/sys/login")
     public R login(@RequestBody UserDTO userDTO){
-//        System.out.println(userDTO.getPassword()+userDTO.getUsername());
+        System.out.println(userDTO.getPassword()+userDTO.getUsername());
         //验证码的验证
         //1,客户端传的验证码
         String captcha = userDTO.getCaptcha();

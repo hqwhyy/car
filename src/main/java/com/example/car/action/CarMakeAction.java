@@ -3,7 +3,6 @@ package com.example.car.action;
 import com.example.car.dto.CarMakeDTO;
 import com.example.car.dto.QueryDTO;
 import com.example.car.pojo.CarMake;
-import com.example.car.pojo.Tag;
 import com.example.car.service.CarMakeService;
 import com.example.car.utils.DataGridResult;
 import com.example.car.utils.R;
@@ -15,7 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
-
+/**
+ * 品牌管理
+ *
+ * @author qwhe
+ * @date 2020/09/29
+ */
 @Controller
 public class CarMakeAction {
 

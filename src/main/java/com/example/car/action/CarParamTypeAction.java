@@ -1,9 +1,7 @@
 package com.example.car.action;
 
-import com.example.car.dto.CarMakeDTO;
 import com.example.car.dto.CarParamTypeDTO;
 import com.example.car.dto.QueryDTO;
-import com.example.car.pojo.CarMake;
 import com.example.car.pojo.CarParamType;
 import com.example.car.service.CarParamTypeService;
 import com.example.car.utils.DataGridResult;
@@ -16,7 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
-
+/**
+ * 参数分类管理
+ *
+ * @author qwhe
+ * @date 2020/09/29
+ */
 @Controller
 public class CarParamTypeAction {
 

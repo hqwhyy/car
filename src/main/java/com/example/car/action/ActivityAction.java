@@ -14,7 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
-
+/**
+ * 活动管理
+ *
+ * @author qwhe
+ * @date 2020/09/29
+ */
 @Controller
 public class ActivityAction {
 
@@ -41,13 +46,13 @@ public class ActivityAction {
 
     @RequestMapping("/sys/activity/info/{id}")
     @ResponseBody
-    public R ActivityInfo(@PathVariable("id") Long id){
+    public R activityInfo(@PathVariable("id") Long id){
         return activityService.findActivityById(id);
     }
 
     @RequestMapping("/sys/activity/update")
     @ResponseBody
-    public R updateActivity(@RequestBody ActivityWithBLOBs Activity){
-        return activityService.updateActivity(Activity);
+    public R updateActivity(@RequestBody ActivityWithBLOBs activity){
+        return activityService.updateActivity(activity);
     }
 }

@@ -15,7 +15,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
-
+/**
+ * 车款管理
+ *
+ * @author qwhe
+ * @date 2020/09/29
+ */
 @Controller
 public class MenuAction {
 
